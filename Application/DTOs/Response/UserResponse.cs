@@ -11,6 +11,7 @@ namespace Application.DTOs.Response
         public Guid Id {  get; set; }
         public string? Email { get; set; }
         public string? FullName { get; set; }
-        public DateTime CreatedAt { get; set; }
+        public bool IsActive { get; set; }
+        public long CreatedAt { get; set; }
     }
 }
