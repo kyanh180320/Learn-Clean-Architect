@@ -15,6 +15,7 @@ namespace Application.UseCases
         public Task<IReadOnlyList<WeatherForecast>> ExecuteAsync(int count, CancellationToken cancellationToken)
         {
             return _weatherForecastRepository.GetForecastsAsync(count, cancellationToken);
+
         }
     }
 }
